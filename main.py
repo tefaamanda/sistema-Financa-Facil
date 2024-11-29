@@ -7,7 +7,7 @@ app = Flask(__name__)
 app.config['SECRET_KEY'] = 'grupo2'
 
 host = 'localhost'
-database = r'C:\Users\joesu\Downloads\siteFinanceiroBancoOficial\BANCODADOS2.FDB'
+database = r'C:\Users\Aluno\Downloads\siteFinanceiroBanco\BANCODADOS.FDB'
 user = 'SYSDBA'
 password = 'sysdba'
 

@@ -545,6 +545,9 @@ ul {
     }
 }
 @media (max-width: 768px) {
+    .mensagem-entrada-sec {
+        font-size: 5px;
+    }
     header {
         flex-direction: column;
         align-items: center;

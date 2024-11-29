@@ -1030,67 +1030,113 @@ th, td {
 
 /* RESPONSIVO */
 @media (max-width: 320px) {
-    header {
-        display: table-header-group;
+    .logo {
+        width: 100px;
+    }
+    .nav {
+        font-size: 12px;
+    }
+    .texto {
+        font-size: 12px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 20px;
+    }
+    .form {
+        padding: 5px;
+    }
+    .input {
+        font-size: 14px;
+        padding: 10px;
+    }
+    footer {
+        padding: 4px;
+    }
+    button.submit {
+        padding: 5px;
+        width: 270px;
+    }
+    div.flex {
+        width: 170px;
+    }
+    .input {
+        padding: 30px;
+    }
+    .input {
+        padding: 5px;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
     }
 }
-@media (max-width: 375px) {
-    header {
-        background-color:
-        var(--cab-e-rod);
+    @media (max-width: 380px) {
+    .cards {
         display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
     }
-    nav {
-        display: flex;
-        padding-top: 80px;
-        padding-left: 40px;
-        padding-right: 40px;
-        font-size: 17px;
-        font-family: "Avenir-Medium";
-        font-weight: bold;
-        gap: 30px;}
-    .botao-cab {
-        background-color: var(--cab-e-rod);
-    }
-    .botao-contato {
-        font-size: 17px;
-        padding: 1em 2.7em;
-        font-weight: 500;
-        background: var(--botao);
-        color: white;
-        border: none;
-        position: relative;
-        border-radius: 0.6em;
-        margin: 60px;
-        margin-left: 20px;
-        margin-bottom: 50px;
-        font-weight: bold;
-        font-family: "Avenir-Medium";
-        }
-    .gradiente {
-        position: absolute;
+    body, html {
+        margin: 0;
+        padding: 0;
         width: 100%;
         height: 100%;
-        left: 0;
-        top: 0;
+        overflow-x: hidden; /* Impede a rolagem horizontal */
+        box-sizing: border-box; /* Inclui padding e bordas no tamanho do elemento */
     }
-    .label-importante {
-        position: relative;
-        top: -1px;
+    .container {
+        width: 100%; /* Garante que o container ocupe 100% da largura da tela */
+        max-width: 1200px; /* Pode definir um limite máximo se necessário */
     }
-    .botao-contato:hover .transicao {
-        width: 14em;
-        height: 14em;
+    .logo {
+        max-width: 100%; /* A logo não ultrapassa a largura do contêiner */
+        height: auto; /* Mantém a proporção */
     }
-    .botao-contato:active {
-        transform: scale(0.97);
+    header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .group {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px;
+    }
+    nav {
+        padding: 10px 0;
+        gap: 5px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        text-align: center; /* Ajusta centralização */
+    }
+    .texto {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .form {
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .logo {
+        width: 150px; /* Reduz tamanho da logo */
+    }
+    h1 {
+        font-size: 22px;
+    }
+    button.submit {
+        padding: 5px;
+        width: 270px;
+    }
+    .input {
+        padding: 20px;
+    }
+    form label .input {
+        width: 67% !important;
     }
 }
 
-@media (max-width: 425px) {
-}
+
 @media (max-width: 768px) {
     .q-somos p {
         padding-left: 60px;
@@ -1108,8 +1154,124 @@ th, td {
         padding-left: 60px;
         padding-right: 190px;
     }
-    /* arrumar rodapé e cabeçalho*/
+header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .group {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+        padding: 10px;
+    }
+    nav {
+        padding: 10px 0;
+        gap: 5px;
+        font-size: 14px;
+        flex-wrap: wrap;
+        text-align: center; /* Ajusta centralização */
+    }
+    .texto {
+        font-size: 14px;
+        padding: 10px;
+    }
+    .form {
+        max-width: 95%;
+        margin: 0 auto;
+        padding: 10px;
+    }
+    .logo {
+        width: 150px; /* Reduz tamanho da logo */
+    }
+    h1 {
+        font-size: 22px;
+    }
+    button.submit {
+        padding: 5px;
+        width: 270px;
+    }
+    .input {
+        padding: 20px;
+    }
+    form label .input {
+        width: 67% !important;
+    }
 }
-@media (max-width: 2560px) {
-    /* aumentar letra *//* centralizar botão *//* arrumar imagens *//* arrumar rodapé e cabeçalho */
+@media (max-width: 1024px) {
+     header, main, footer {
+        width: 100%;
+        padding: 0 10px; /* Adicionado para melhor ajuste */
+    }
+    nav {
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    .texto {
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+    .form {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 15px;
+    }
+    h1 {
+        font-size: 24px;
+    }
+    form label .input {
+        width: 67% !important;
+    }
+    .submit {
+        width: 98% !important;
+    }
+}
+
+@media (max-width: 480px) {
+    form label .input {
+        width: 67% !important;
+    }
+    .nav {
+        font-size: 12px;
+    }
+    .group {
+        width: 100%;
+        padding: 0 5px;
+    }
+    .logo {
+        width: 120px;
+    }
+    .texto {
+        font-size: 12px;
+        padding: 10px;
+    }
+    h1 {
+        font-size: 18px;
+    }
+    .form {
+        padding: 5px;
+        max-width: 100%;
+    }
+    .input {
+        font-size: 14px;
+        padding: 10px;
+    }
+    footer {
+        padding: 5px;
+    }
+    button.submit {
+        padding: 8px;
+        width: 100%; /* Botão ocupa 100% da largura */
+    }
+    div.flex {
+        width: 100%;
+        flex-direction: column; /* Ajusta inputs para colunas */
+    }
+    .secao-user {
+        display: flex;
+        flex-direction: column;
+    }
+    .cards {
+        display: flex;
+        flex-direction: column;
+    }
 }
